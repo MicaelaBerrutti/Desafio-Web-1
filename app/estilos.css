@@ -1,0 +1,151 @@
+:root{
+    --incripcion-color :  rgba(255, 136, 0, 0.452);
+    --violeta :  rgb(72, 0, 155);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+/*BANNER*/
+#banner {
+    width: 100vw;
+    height: 60vh;
+    overflow: hidden;
+    background-color: white;
+   background-image: url(../img/violeta.png);
+   background-size:cover;
+    background-repeat: no-repeat;
+    position: relative; 
+}
+
+#contenedor-titulo-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    align-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+}
+
+#titulo-banner {
+    color: white;
+    font-size: 200%;
+    width: auto;
+    height: auto;
+    z-index: 4;
+   
+}
+
+#img-banner {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-image: url(../img/brillos.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+
+}
+
+#fondo-banner {
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+
+}
+
+#brillos-banner {
+    position: absolute;
+    z-index: 3;
+   background-size: contain;
+   background-repeat: no-repeat;
+    width: 100%;
+
+}
+
+/*ARTICULOS*/
+#contenedor-articulos{
+    margin: auto;
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 5%;
+}
+
+.articulo{
+    width:100%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    flex-direction: row;
+    column-gap: 5%;
+}
+
+.imagen-articulo{
+    width: 45%;
+}
+
+.contenedor-texto{
+    width: 45%;
+}
+
+#contenedor-inscripcion{
+    background-color: var(--incripcion-color);
+    width: 80%;
+    margin: auto;
+    border-radius: 2.5%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#button{
+    border: 1px solid black;
+    border-radius: 5%;
+    padding: 1%;
+}
+
+#button:hover{
+    background-color: white;
+    color: black;
+}
+
+/*footer*/
+
+footer{
+    background-color: var(--violeta);
+    height: 10%;
+    width: 100%;
+    color:white;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    
+    
+}
+
+#footer{
+    margin-left: 10%;
+}
