@@ -18,7 +18,7 @@ body {
 /*BANNER*/
 #banner {
     width: 100vw;
-    height: 60vh;
+    height: 70vh;
     overflow: hidden;
     background-color: white;
    background-image: url(../img/violeta.png);
@@ -26,12 +26,17 @@ body {
     background-repeat: no-repeat;
     position: relative; 
 }
-
+ 
+#menu-icon{
+    position: absolute;
+}
 #contenedor-titulo-banner {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
+    width: 50%;
+    margin: auto;
     align-content: center;
     position: absolute;
     top: 0;
@@ -43,10 +48,11 @@ body {
 
 #titulo-banner {
     color: white;
-    font-size: 200%;
+    font-size: 320%;
     width: auto;
     height: auto;
     z-index: 4;
+    text-align: center;
    
 }
 
@@ -80,7 +86,7 @@ body {
 
 /*ARTICULOS*/
 #contenedor-articulos{
-    margin: auto;
+    margin: 10% auto 0;
     width: 80%;
     height: 100%;
     display: flex;
@@ -93,38 +99,70 @@ body {
 
 .articulo{
     width:100%;
+height: fit-content;
     display: flex;
     align-items: center;
     align-content: center;
     justify-content: center;
     flex-direction: row;
     column-gap: 5%;
+    font-family: 'Work Sans', sans-serif;
+    font-weight:bolder;
 }
 
 .imagen-articulo{
     width: 45%;
 }
 
-.contenedor-texto{
-    width: 45%;
+.titulo-articulo{
+    color:var(--violeta);
+    font-size: 130%;
+    line-height: 150%;
+    margin-bottom: 5%;
 }
+
+.contenedor-texto{
+    width: 50%;
+
+}
+
 
 #contenedor-inscripcion{
     background-color: var(--incripcion-color);
     width: 80%;
-    margin: auto;
+    height: 20%;
+   /* margin-top: 8%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 6%;*/
+    margin: 8% auto 6%;
     border-radius: 2.5%;
     display: flex;
     align-items: center;
-    align-content: center;
-    justify-content: center;
-    flex-direction: column;
+   flex-direction: column;
+}
+#titulo-inscripcion{
+    font-family:'Work Sans', sans-serif;
+    font-size:medium;
+    font-weight:bolder;
+    margin-top: 3%;
+    
 }
 
+.texto{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: lighter;
+    font-size: small;
+    line-height: 140%;
+    
+}
 #button{
     border: 1px solid black;
     border-radius: 5%;
     padding: 1%;
+    margin:1%;
+    font-size: medium;
+    font-family:'Work Sans', sans-serif;
 }
 
 #button:hover{
@@ -136,7 +174,7 @@ body {
 
 footer{
     background-color: var(--violeta);
-    height: 10%;
+    height: 15%;
     width: 100%;
     color:white;
     display: flex;
@@ -148,4 +186,7 @@ footer{
 
 #footer{
     margin-left: 10%;
+    font-family:'Work Sans', sans-serif;
+    font-size: 70%;
+    font-weight: 100;
 }
