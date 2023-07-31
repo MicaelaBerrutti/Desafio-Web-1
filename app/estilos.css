@@ -29,6 +29,11 @@ body {
  
 #menu-icon{
     position: absolute;
+    z-index: 12;
+}
+
+.clickeable:hover{
+    cursor:pointer;
 }
 #contenedor-titulo-banner {
     display: flex;
@@ -87,8 +92,7 @@ body {
 /*ARTICULOS*/
 #contenedor-articulos{
     margin: 10% auto 0;
-    width: 80%;
-    height: 100%;
+    width: 80%;   
     display: flex;
     align-items: center;
     align-content: center;
@@ -99,7 +103,6 @@ body {
 
 .articulo{
     width:100%;
-height: fit-content;
     display: flex;
     align-items: center;
     align-content: center;
@@ -130,7 +133,7 @@ height: fit-content;
 #contenedor-inscripcion{
     background-color: var(--incripcion-color);
     width: 80%;
-    height: 20%;
+    height: 18%;
    /* margin-top: 8%;
     margin-left: auto;
     margin-right: auto;
@@ -139,16 +142,21 @@ height: fit-content;
     border-radius: 2.5%;
     display: flex;
     align-items: center;
+    padding: 1%;
    flex-direction: column;
 }
 #titulo-inscripcion{
     font-family:'Work Sans', sans-serif;
     font-size:medium;
     font-weight:bolder;
-    margin-top: 3%;
+    margin-top: 1%;
+    font-size: 150%;
     
 }
-
+#texto-inscripcion{
+    width: 90%;
+    text-align: center;
+}
 .texto{
     font-family: 'Work Sans', sans-serif;
     font-weight: lighter;
@@ -189,4 +197,74 @@ footer{
     font-family:'Work Sans', sans-serif;
     font-size: 70%;
     font-weight: 100;
+}
+
+.menu{
+    position: absolute;
+    background-color:var(--violeta);/*#7762A6;*/
+    height: 40%;
+    width: 20%;
+    top: 0;
+    left: 0%;
+   z-index: 10;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   align-content: flex-start;
+}
+
+a{
+    color: white;
+    text-decoration-line:overline;
+    padding: 5%;
+}
+
+a:hover{
+    color:#b697f9;
+    
+}
+
+@media screen and (max-width:600px){
+    #contenedor-titulo-banner {
+        width: 90%;
+        font-size: 90%;
+    }
+    .articulo{
+        flex-direction: column;
+        align-items:center;
+        margin-top: 7%;
+        
+    
+    }
+    .contenedor-texto{
+        width: 99%;
+    }
+    .imagen-articulo{
+        width: 80%;
+        margin: 2%;
+       
+    }
+
+    #texto-inscripcion{
+        width: 90%;
+        text-align: center;
+    }
+
+    .menu{
+        width: 100vw;
+        height: 100vh;
+    }
+
+    a{
+        font-size:larger;
+    }
+
+    footer{
+        height:10%;
+    }
+
+    #titulo-inscripcion{
+        font-size: 100%;
+    }
 }
