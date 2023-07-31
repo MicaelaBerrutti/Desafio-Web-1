@@ -1,5 +1,5 @@
 :root{
-    --incripcion-color :  rgba(255, 136, 0, 0.452);
+    --inscripcion-color :  rgba(255, 136, 0, 0.452);
     --violeta :  rgb(72, 0, 155);
 }
 
@@ -126,12 +126,11 @@ body {
 
 .contenedor-texto{
     width: 50%;
-
 }
 
 
 #contenedor-inscripcion{
-    background-color: var(--incripcion-color);
+    background-color: var(--inscripcion-color);
     width: 80%;
     height: 18%;
    /* margin-top: 8%;
@@ -145,18 +144,20 @@ body {
     padding: 1%;
    flex-direction: column;
 }
+
 #titulo-inscripcion{
     font-family:'Work Sans', sans-serif;
     font-size:medium;
     font-weight:bolder;
     margin-top: 1%;
-    font-size: 150%;
-    
+    font-size: 150%; 
 }
+
 #texto-inscripcion{
     width: 90%;
     text-align: center;
 }
+
 .texto{
     font-family: 'Work Sans', sans-serif;
     font-weight: lighter;
@@ -164,6 +165,7 @@ body {
     line-height: 140%;
     
 }
+
 #button{
     border: 1px solid black;
     border-radius: 5%;
@@ -178,7 +180,7 @@ body {
     color: black;
 }
 
-/*footer*/
+/*FOOTER*/
 
 footer{
     background-color: var(--violeta);
@@ -187,9 +189,7 @@ footer{
     color:white;
     display: flex;
     align-items: center;
-    align-content: center;
-    
-    
+    align-content: center; 
 }
 
 #footer{
@@ -201,7 +201,7 @@ footer{
 
 .menu{
     position: absolute;
-    background-color:var(--violeta);/*#7762A6;*/
+    background-color:var(--violeta);
     height: 40%;
     width: 20%;
     top: 0;
